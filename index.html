@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue + TS</title>
+    <style>
+      .cdx-input {
+        padding-left: 0.15em;
+      }
+      [contenteditable]:focus {
+        outline: none;
+      }
+      [contenteditable='false'] {
+        font-weight: bold;
+        font-family: mono;
+        outline: 0.5px solid #f7f7f7;
+        outline-offset: 0.2em;
+        outline-style: dashed;
+        user-select: none;
+        -webkit-touch-callout: none;
+        transition: all 0.2s ease-in-out;
+      }
+      [contenteditable='false']:hover {
+        outline: 0.5px dashed #e8e8e8;
+      }
+      .codex-editor__redactor {
+        padding-bottom: 0 !important;
+      }
+      .id-card {
+        aspect-ratio: 1.586;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <span class="subtitle has-text-white">Editor.js Demo</span>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="https://editorjs.io/" class="navbar-item"> Documentation </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+
+            <div class="navbar-dropdown">
+              <a
+                href="https://github.com/SKevo18/pyEditorJS"
+                class="navbar-item"
+              >
+                pyEditorJS
+              </a>
+              <a
+                href="https://github.com/2ik/django-editorjs-fields"
+                class="navbar-item"
+              >
+                Django Field
+              </a>
+
+              <hr class="navbar-divider" />
+              <a
+                href="https://github.com/ChangJoo-Park/vue-editor-js/tree/master"
+                class="navbar-item"
+              >
+                Vue Editor js
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light"> Log in </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-light">
+      <div class="hero-body content">
+        <p>
+          This is a first look at the new template editor. Select which fields
+          you want to display on the ID Card and arrange the items as reqired.
+          You can test your layout with sample data on the preview tab
+        </p>
+        <p>The output can be in HTML, JPG and PDF</p>
+      </div>
+    </section>
+
+    <main id="app"></main>
+
+    <footer class="footer">
+      <p>2023</p>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
